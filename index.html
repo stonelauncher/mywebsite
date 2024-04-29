@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html> 
+<head> 
+<title>My first website</title>
+<meta charset="UTF-8">
+<meta name="description" content = "HTML tutorial notes">
+<meta name="keywords" content = "HTML, tutorial, beginner">
+<meta name="author" content = "me">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="refresh" content="30">
+</head>
+<body style="background-color: #245b7d"> 
+<!-- Comment -->
+<h1 style="color: lime">Hello!</h1>
+<hr>
+<h2 style = "color: rgb(20,200,200)">Notes:</h2>
+<p style="background-color:#aaaaaa">
+Every html5 document should start with <'!DOCTYPE html> and be written inside <'html>...<'/html>.
+<br>Each html document should have a head (<'head>...<'/head>) and a body (<'body>...<'/body>).
+<br><'h1> is largest, <'h6> is smallest header.<br><'br> is break line (no end element).
+<br><'hr> is horizontal rule (horizontal line).
+<br><'p>...<'/p> is for paragraphs.
+<br>Each element can have their id. Example: <'p id="...">...<'/p>
+<br><'!-- ... --> is for comments.
+<br><'a href="link here"..>...<'/a> is for links, you can also email with mailto.
+<br><'img src="..." height=... width=... (if only height is defined width will scale proportionately) alt=... title=...> is for images
+<br><'audio controls autoplay muted loop src="..."> or <'audio controls><'source src="sounds/jingle.mp3">This browser does not support this audio format.<'/audio> is for audio (controls autoplay muted and loop are booleans)
+<br>Video works very similar to audio.
+<br><'b>...<'/b> = <b>bold</b> text, <'i>...<'/i> = <i>italic</i> text, <'big>...<'/big> = <big>big</big> text, <'small>...<'/small> = <small>small</small> text, <'sub>...<'/sub> = <sub>subscript</sub> text, <'sup>...<'/sup> = <sup>superscript</sup> text, <'ins>...<'/ins> = <ins>inserted</ins> text, <'del>...<'/del> = <del>deleted</del> text and <'mark>...<'/mark> = <mark>marked</mark> text.
+<br><'ul>...<'/ul> is for unordered lists, <'ol type=""(1,A,a...)>...<'/ol> is for ordered lists, <'li>list item here<'/li> is for list items (inside of an ordered/unordered list). You can make lists inside lists (nested lists).
+<br><'dl>...<'/dl> is for description lists, <'dt>...<'/dt> is definition term and <'dd>...<'/dd> is definition description.
+<br><'table bgcolor="">...<'/table> is for tables. Inside of tables we have <'tr bgcolor="" align="">...<'/tr> - table rows and inside of table rows we have <'th>...<'/th> - table headers and <'td>...<'/td> - table data.
+<br>CSS style attribute is used for coloring, for example: <b style="color:yellow"><'b style="color="yellow"><'/b></b>. Aside from color names you can also use hex (#number) and rgb (rgb(red, green, blue)) values.
+<br><span style="background-color:#fedbca">span adds markup to text or a portion of a document. <'span>...<'/span></span>
+<br><div style="background-color:#abcdcb">div defines a division of a document <'div>...<'/div></div>
+<br>
+<div style="background-color:#aaaaaa">
+meta element represents various kinds of metadata that cannot be expressed using the title, base, link ,style and script elements. <'meta> is placed in the head part of document
+<br>iframe = embed content from another source into an HTML document. Example: <'iframe src="https://www.google.com">
+<br><'button onclick="..." (when button is clicked) disabled (for disabling a button), style="...">...<'/button> is for buttons. You can put buttons inside <'a> (link) tags.
+</div>
+</p>
+<br><img src="images/test.png" height="200" width="200" alt="This is a test picture." title="Mountains.">
+<br><audio controls><source src="sounds/jingle.mp3"><source src="sounds/jingle.wav">This browser does not support HTML5 audio.</audio>
+<br><h4>Unordered list:</h4><ul>
+<li>pizza dough</li>
+<li>tomato sauce</li>
+<li>cheese</li>
+<li>toppings
+<ul>
+<li>pepperoni</li>
+<li>mushrooms</li>
+<li>peppers</li>
+</ul>
+</li>
+</ul>
+<h4>Ordered list:</h4><ol type="a">
+<li>eat breakfast</li>
+<li>take shower</li>
+<li>leave for work</li>
+</ol>
+<h4>Description List</h4>
+<dl>
+<dt>HTML</dt>
+<dd>This adds structure to a webpage.</dd>
+<dt>CSS</dt>
+<dd>This adds style to a webpage.</dd>
+<dt>JavaScript</dt>
+<dd>This adds functionality to a webpage.</dd>
+</dl>
+<table bgcolor="black" width="700">
+<tr bgcolor = "grey">
+<th>Monday</th>
+<th>Tuesday</th>
+<th>Wednesday</th>
+<th>Thursday</th>
+<th>Friday</th>
+<th>Saturday</th>
+<th>Sunday</th>
+</tr>
+<tr bgcolor="lightgrey" align="center">
+<td>9-5</td>
+<td>9-5</td>
+<td>9-5</td>
+<td>9-5</td>
+<td>9-5</td>
+<td>Closed</td>
+<td>Closed</td>
+</tr>
+</table>
+<br><form action="action_page.php" method="POST">
+    <div>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" placeholder="First name here" required>
+    </div>
+    <br>
+    <div>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" placeholder="Last name here">
+    </div>
+    <br>
+    <div>
+        <label for="pass">Password:</label>
+        <input type="password" id="pass" name="pass" placeholder="Password here" maxlength="12">
+    </div>
+    <br>
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Email here">
+    </div>
+    <br>
+    <div>
+        <label for="phone">Password:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Phone number here">
+    </div>
+    <br>
+    <div>
+        <input type="reset">
+    </div>
+    <br>
+    <div>
+        <input type="submit">
+    </div>
+</form>
+<br><a href="https://google.com"><button style="background-color:#333333; color:#00aa00; border-radius:5px">click me to go to google</button></a>
+<br><button style="background-color:#cccccc; color:#aa00aa;border-radius:5px">click me</button>
+<br><a href="page2.html" target=_self title = "This takes you to page 2."><img src="images/nextbutton.png"><a>
+<br><iframe style="border:0" src="ad.html" width="750" height="100">
+</body>
+
+</html>
